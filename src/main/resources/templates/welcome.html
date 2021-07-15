@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>拼团首页</title>
+<!--    <link href="/css4/bootstrap.css" rel="stylesheet" type="text/css" media="all" />-->
+<!--    <link href="/css4/style.css" rel="stylesheet" type="text/css" media="all" />-->
+    <!-- Bootstrap core CSS -->
+    <link href="/asserts/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/asserts/css/dashboard.css" rel="stylesheet">
+    <style>
+        h3{
+            color: red;
+        }
+        h5{
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+<!--顶部导航栏-->
+<div th:replace="~{common/common::topbar}"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!--侧边栏-->
+        <!--传递参数给组件-->
+        <div th:replace="~{common/common::sidebar(active='welcome.html')}"></div>
+
+
+        <!--main.html-->
+        <div class="container">
+            <div class="donate" style="margin-left: 330px">
+                <div class="donate-grid">
+                    <font color="black" size="5px" style="margin-left: 1000px"><b><br>我们使您参加活动更加方便 这是一家简单的组织团队活动的网站，用户可以在该网站进行创建团队、加入他人团队，包括摄影、科研、志愿者、旅游、体育运动等一系列活动</b></font>
+                </div>
+                <div class="sit-in">
+                    <div class="col-md-12 ad-in">
+                        <h3><b>•旅游</b></h3>
+                        <h5><b>自行创建旅游团等待其他人的加入，或者参与陌生人的团，开启新的旅途。
+                            要么读书、要么旅行，身体和灵魂，必须有一个在路上。 </b></h5>
+                        <br>
+                        <h5><b>Create your own tour group, wait for others to join, or join a stranger's group, and start a new journey.
+                            Either reading or traveling, body and soul, there must be one on the way.</b></h5>
+                    </div>
+                    <div class="col-md-12 ad-in">
+                        <h3><b>•户外</b></h3>
+                        <h5><b>与团队队员一起进行户外体验式训练，通过设计独特的富有思想性、挑战性和
+                            趣味性的户外活动，培训人们积极进取的人生态度和团队合作精神。</b></h5>
+                        <br>
+                        <h5><b>Carry out outdoor experiential training with team members, through the design of unique ideological, challenging and practical training
+                            Interesting outdoor activities, training people's positive attitude towards life and team spirit.<br><br></b></h5>
+                    </div>
+
+                    <div class="col-md-12 ad-in">
+                        <h3><b>••••••<br><br></b></h3>
+                    </div>
+
+                    <div class="col-md-12 ad-in">
+                        <h3><b>期待您的加入！</b></h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="/asserts/js/jquery-3.2.1.slim.min.js" ></script>
+<script type="text/javascript" src="/asserts/js/popper.min.js" ></script>
+<script type="text/javascript" src="/asserts/js/bootstrap.min.js" ></script>
+
+<!-- Icons -->
+<script type="text/javascript" src="/asserts/js/feather.min.js" ></script>
+<script>
+    feather.replace()
+</script>
+
+</body>
+
+</html>
